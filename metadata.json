@@ -1,0 +1,6 @@
+{
+  "name": "FLP Church",
+  "description": "The digital sanctuary of Front Line People Church, featuring their Audio Archive, statement of vision, and church leadership.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

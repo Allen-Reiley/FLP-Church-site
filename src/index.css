@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Font Family Override */
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Sora", ui-sans-serif, system-ui, sans-serif;
+
+  /* material theme colors matching front line people church style design */
+  --color-background: #fbf9f9;
+  --color-on-background: #1b1c1c;
+  --color-surface: #fbf9f9;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3f3;
+  --color-surface-container: #efeded;
+  --color-surface-container-high: #e9e8e8;
+  --color-surface-container-highest: #e4e2e2;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #564334;
+  --color-primary: #904d00;
+  --color-primary-container: #ff8c00;
+  --color-on-primary-container: #623200;
+  --color-inverse-primary: #ffb77d;
+  --color-secondary: #396753;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #bbeed4;
+  --color-on-secondary-container: #3f6d59;
+  --color-tertiary: #356479;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #82b0c8;
+  --color-on-tertiary-container: #0d4358;
+  --color-outline: #897362;
+  --color-outline-variant: #ddc1ae;
+  --color-primary-fixed: #ffdcc3;
+  --color-primary-fixed-dim: #ffb77d;
+  --color-on-primary-fixed: #2f1500;
+  --color-on-primary-fixed-variant: #6e3900;
+  --color-secondary-fixed: #bbeed4;
+  --color-secondary-fixed-dim: #a0d1b9;
+  --color-on-secondary-fixed: #002115;
+  --color-on-secondary-fixed-variant: #204f3c;
+  --color-tertiary-fixed: #bfe8ff;
+  --color-tertiary-fixed-dim: #9fcde6;
+  --color-on-tertiary-fixed: #001f2b;
+  --color-on-tertiary-fixed-variant: #1a4c61;
+  --color-surface-variant: #e4e2e2;
+}
+
+@layer utilities {
+  .hex-clip {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+}
+
+/* Custom transitions and scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fbf9f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #e4e2e2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ddc1ae;
+}
+
+body {
+  background-color: #fbf9f9;
+  color: #1b1c1c;
+  font-family: "Sora", sans-serif;
+  overflow-x: hidden;
+}
